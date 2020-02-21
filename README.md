@@ -1,6 +1,6 @@
 # Forgiveness API
 
-Server for Forgivness Project.
+Server for Forgiveness Project.
 
 ## [License](LICENSE)
 
