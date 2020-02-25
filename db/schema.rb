@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 2020_02_24_191529) do
     t.string "title", null: false
     t.string "author"
     t.text "body"
-    t.date "date"
+    t.date "post_date"
     t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
