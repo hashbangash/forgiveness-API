@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
-class PostsController < OpenReadController
+class PostsController < ProtectedController
   before_action :set_post, only: %i[show update destroy]
 
   # GET /posts
   def index
-    @posts = Post.all
+    @posts = current_user.posts
 
     render json: @posts
   end
