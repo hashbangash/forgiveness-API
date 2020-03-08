@@ -5,8 +5,12 @@ class PostsController < OpenReadController
 
   # GET /posts
   def index
-    # @posts = current_user.posts
-    @posts = Post.all
+    # @posts = Post.all
+    @posts = if params[:user_posts]
+               current_user.posts
+             else
+               Post.all
+             end
 
     render json: @posts
   end

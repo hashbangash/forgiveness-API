@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 2020_02_24_191529) do
     t.string "title", null: false
     t.string "author"
     t.text "body"
+    t.boolean "user_posts", default: false, null: false
     t.date "post_date"
     t.bigint "user_id"
     t.datetime "created_at", null: false
