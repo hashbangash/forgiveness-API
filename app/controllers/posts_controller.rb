@@ -5,13 +5,12 @@ class PostsController < OpenReadController
 
   # GET /posts
   def index
-    # @posts = Post.all
     @posts = if params[:user_posts]
                current_user.posts
              else
                Post.all
              end
-
+    p @posts
     render json: @posts
   end
 
@@ -54,6 +53,6 @@ class PostsController < OpenReadController
 
   # Only allow a trusted parameter "white list" through.
   def post_params
-    params.require(:post).permit(:title, :author, :body, :post_date, :user_id)
+    params.require(:post).permit(:title, :author, :body, :user_id)
   end
 end
