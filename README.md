@@ -4,6 +4,7 @@ Server/back-end/API for Forgiveness Project.
 #### Front-End Repo: [here](https://github.com/hashbangash/forgiveness-client)
 #### Live Production Link: [here](https://hashbangash.github.io/forgiveness-client/)
 #### Live API Link: [here](https://floating-springs-18499.herokuapp.com/posts)
+#### ERD link: [here](https://i.imgur.com/uZFe9kz.jpg)
 
 ## Back-End Tech
 I used Ruby on Rails for this project's API. It's awesome to easily generate scaffolds. It's extremely opinionated and orderly. I love the readability, simplicity and idealism of Ruby.
